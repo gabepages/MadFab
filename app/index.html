@@ -4,26 +4,86 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <title>MadFab</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
     <div class="container-fluid">
       <div class="nav-bar row">
-        <h1>MadFab</h1>
+        <h1 class='col-xs-offset-1 col-xs-4'>MadFab</h1>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contact Us</a></li>
         </ul>
       </div>
       <div class="row main-landing">
+        <a name='home'></a>
         <div class="header col-xs-8 col-xs-offset-1">
           <h1>Madfab</h1>
           <h2>Macarons and desserts</h2>
         </div>
       </div>
+      <div class="row menu">
+        <a name="menu"></a>
+        <h1>Menu</h1>
+        <div class="menu-options">
+          <a href="" class="col-xs-12 col-md-4">
+            <img src="images/macs.jpg" alt="">
+            <h3>Macarons</h3>
+          </a>
+          <a href="" class="col-xs-12 col-md-4">
+            <img src="images/mers.jpg" alt="">
+            <h3>Meringues</h3>
+          </a>
+          <a href="" class="col-xs-12 col-md-4">
+            <img src="images/bakes.jpg" alt="">
+            <h3>Baked Goods</h3>
+          </a>
+        </div>
+      </div>
+      <div class="photo-section row"></div>
+      <div class="contact row">
+        <a name='contact'></a>
+        <div class="about-maddie col-xs-12 col-md-6">
+          <div class="about-copy">
+            <h2>About MadFab</h2>
+            <h4>Hello! Welcome to MadFab! My name is Madison and I am a current college student with a passion for baking and pastry. I have loved to be in the kitchen for as long as I can remember. My expanding and changing menu consists of a variety of unique and delicious meringues, macarons, and other various baked goods. </h4>
+          </div>
+        </div>
+        <div class="contact-maddie col-xs-12 col-md-6">
+          <div class="contact-section">
+            <h2>Contact MadFab</h2>
+            <ul>
+              <li><a href="mailto:madffab@gmail.com ">madffab@gmail.com </a></li>
+              <li>813.690.5156</li>
+              <li><a id='instagram' href="https://www.instagram.com/mad.fab/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+          <form >
+            <div class="input-field">
+              <input id="name" type="text" class="validate">
+              <label for="name" id='name-label' data-error="Please enter your name">Name</label>
+            </div>
+            <div class="input-field">
+              <input id="email" type="email" class="validate ">
+              <label for="email" id='email-label' data-error="Please enter valid email address">Email</label>
+            </div>
+            <div class="input-field">
+               <textarea id="message" class="materialize-textarea"></textarea>
+               <label for="message" id='message-label' data-error="Please enter a message">Message</label>
+            </div>
+            <button class="btn waves-effect waves-light" type="submit" name="action">Send Message
+              <i class="material-icons right">send</i>
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
 
     <script src="js/bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
   </body>
 </html>

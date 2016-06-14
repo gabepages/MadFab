@@ -30,12 +30,13 @@ img {
   height: 55px;
   position: fixed;
   width: 100%;
+  z-index: 100;
   h1{
     display: inline-block;
     color: white;
     font-weight: 100;
     text-transform: uppercase;
-    margin: 8px 0 0 120px;
+    margin-top: 8px;
     letter-spacing: 5px;
     font-family: MarzoW00-Regular;
   }
@@ -56,7 +57,7 @@ img {
         color: white;
         transition: 0.4s;
         &:hover{
-          color: gray;
+          color: rgba(253, 131, 132, 0.8);;
         }
       }
     }
@@ -88,3 +89,262 @@ img {
     }
   }
 }
+
+
+
+.menu{
+  height: 100vh;
+  h1{
+    font-family:  MarzoW00-Regular;
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: 8px;
+    margin: 95px auto 60px auto;
+  }
+  a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 25px;
+    &:hover{
+      img{
+        opacity: 0.7;
+      }
+      h3{
+        color: rgba(253, 131, 132, 1);
+      }
+    }
+  }
+  .menu-options{
+    margin-bottom: 50px;
+    h3{
+      font-family:  MarzoW00-Regular;
+      font-size: 35px;
+      margin-top: 15px;
+      transition: 0.3s;
+    }
+    img{
+      height: 345px;
+      transition: 0.3s;
+
+    }
+  }
+}
+
+.photo-section{
+  height: 100vh;
+  background: url('../images/messy.jpeg')center center fixed;
+  background-size: cover;
+}
+.contact{
+  height: 93vh;
+  .about-maddie{
+    height: 93vh;
+    background: url('../images/maddie.jpg') center 0px;
+    background-size: cover;
+    padding: 0 50px 0 30px;
+    &::before{
+      position: absolute;
+      content: '';
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(50, 50, 50, 0.6);
+    }
+    .about-copy{
+      position: absolute;
+      bottom: 38px;
+      padding-right: 40px;
+    }
+    h2{
+      position: relative;
+      color: white;
+      font-family:  MarzoW00-Regular;
+      font-weight: bold;
+      font-size: 55px;
+      letter-spacing: 2px;
+    }
+    h4{
+      position: relative;
+      color: white;
+      font-weight: 100;
+      font-size: 26px;
+    }
+  }
+  .contact-maddie{
+    height: 93vh;
+    background: url('../images/contact-maddie.jpg') center -115px;
+    background-size: cover;
+    padding: 0 72px 0 30px;
+    &::before{
+      position: absolute;
+      content: '';
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(50, 50, 50, 0.6);
+    }
+    .contact-section{
+      h2{
+        position: relative;
+        color: white;
+        font-family:  MarzoW00-Regular;
+        font-weight: bold;
+        font-size: 55px;
+        letter-spacing: 2px;
+      }
+      ul{
+        padding: 0;
+        list-style: none;
+        float: right;
+        position: relative;
+        li{
+          color: white;
+          font-size: 18px;
+          margin: 10px 0 10px 10px;
+          font-weight: 100;
+          letter-spacing: 2px;
+          #instagram{
+            padding: 6px 8px 6px 8px;
+            background-color: rgba(253, 131, 132, 0.8);
+            border-radius: 25px;
+            color: white;
+            transition: 0.5s;
+            margin-top: 15px;
+            i{
+              margin-top: 10px;
+            }
+            &:hover{
+              color: rgba(253, 131, 132, 0.8);
+              background-color: white;
+            }
+          }
+          a{
+            text-decoration: none;
+            color: rgba(253, 131, 132, 0.8);
+            transition: 0.5s;
+            &:hover{
+              color: white;
+            }
+          }
+        }
+      }
+    }
+    form{
+      width: 58%;
+      position: relative;
+      margin-top: 15px;
+      label{
+        font-size: 18px;
+        color: white;
+        font-weight: 100;
+      }
+      label.active{
+          transform: translateY(-75%);
+      }
+      input{
+        margin-top: 10px;
+        color: white;
+        font-size: 15px;
+        letter-spacing: 1px;
+        font-weight: 100;
+      }
+      #message-label.active{
+        color: rgba(253, 131, 132, 0.8);
+      }
+      textarea{
+        margin-top: 10px;
+        color: white;
+        font-size: 15px;
+        letter-spacing: 1px;
+        font-weight: 100;
+        &:focus {
+        color: white;
+        border-bottom: 1px solid rgba(253, 131, 132, 0.8);
+        box-shadow: 0 1px 0 0 rgba(253, 131, 132, 0.8);
+        }
+      }
+      button{
+        background-color: rgba(253, 131, 132, 0.8);
+      }
+    }
+  }
+}
+
+
+
+
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: rgba(253, 131, 132, 0.8);
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid rgba(253, 131, 132, 0.8);
+     box-shadow: 0 1px 0 0 rgba(253, 131, 132, 0.8);
+   }
+   /* valid color */
+   .input-field input[type=text].valid {
+     border-bottom: 1px solid green;
+     box-shadow: 0 1px 0 0 green;
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid {
+     border-bottom: 1px solid red;
+     box-shadow: 0 1px 0 0 red;
+   }
+
+
+   /* label focus color */
+   .input-field input[type=email]:focus + label {
+     color: rgba(253, 131, 132, 0.8);
+   }
+   /* label underline focus color */
+   .input-field input[type=email]:focus {
+     border-bottom: 1px solid rgba(253, 131, 132, 0.8);
+     box-shadow: 0 1px 0 0 rgba(253, 131, 132, 0.8);
+   }
+   /* valid color */
+   .input-field input[type=email].valid {
+     border-bottom: 1px solid green;
+     box-shadow: 0 1px 0 0 green;
+   }
+   /* invalid color */
+   .input-field input[type=email].invalid {
+     border-bottom: 1px solid red;
+     box-shadow: 0 1px 0 0 red;
+   }
+
+
+
+
+.row{
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a{text-decoration: none;}
