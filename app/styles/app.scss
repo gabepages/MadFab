@@ -1,0 +1,90 @@
+
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+@import url('http://db.onlinewebfonts.com/c/1e6ec96c95301fa73aa1d026f161a269?family=MarzoW00-Regular');
+
+@font-face {font-family: "MarzoW00-Regular";
+    src: url("http://db.onlinewebfonts.com/t/1e6ec96c95301fa73aa1d026f161a269.eot");
+    src: url("http://db.onlinewebfonts.com/t/1e6ec96c95301fa73aa1d026f161a269.eot?#iefix") format("embedded-opentype"),
+    url("http://db.onlinewebfonts.com/t/1e6ec96c95301fa73aa1d026f161a269.woff2") format("woff2"),
+    url("http://db.onlinewebfonts.com/t/1e6ec96c95301fa73aa1d026f161a269.woff") format("woff"),
+    url("http://db.onlinewebfonts.com/t/1e6ec96c95301fa73aa1d026f161a269.ttf") format("truetype"),
+    url("http://db.onlinewebfonts.com/t/1e6ec96c95301fa73aa1d026f161a269.svg#MarzoW00-Regular") format("svg");
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+.nav-bar{
+  background-color: black;
+  height: 55px;
+  position: fixed;
+  width: 100%;
+  h1{
+    display: inline-block;
+    color: white;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 8px 0 0 120px;
+    letter-spacing: 5px;
+    font-family: MarzoW00-Regular;
+  }
+  ul{
+    display: inline-block;
+    padding: 0;
+    list-style: none;
+    float: right;
+    margin: 0 120px 0 0;
+    li{
+      display: inline-block;
+      font-size: 21px;
+      font-weight: 100;
+      text-transform: uppercase;
+      margin: 13px 10px;
+      a{
+        text-decoration: none;
+        color: white;
+        transition: 0.4s;
+        &:hover{
+          color: gray;
+        }
+      }
+    }
+  }
+}
+
+.main-landing{
+  height: 100vh;
+  background: url('../images/header.jpeg')center fixed;
+  background-size: cover;
+  .header{
+    // padding-top: 495px;
+    position: absolute;
+    bottom: 32px;
+    h1{
+      font-size: 90px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-family: MarzoW00-Regular;
+      color: white;
+    }
+    h2{
+      font-size: 35px;
+      color: white;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+      font-weight: 100;
+    }
+  }
+}
