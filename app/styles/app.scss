@@ -4,16 +4,8 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 
 // Import Bootstrap
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
-@import url('http://db.onlinewebfonts.com/c/1e6ec96c95301fa73aa1d026f161a269?family=MarzoW00-Regular');
 
-@font-face {font-family: "MarzoW00-Regular";
-    src: url("http://db.onlinewebfonts.com/t/1e6ec96c95301fa73aa1d026f161a269.eot");
-    src: url("http://db.onlinewebfonts.com/t/1e6ec96c95301fa73aa1d026f161a269.eot?#iefix") format("embedded-opentype"),
-    url("http://db.onlinewebfonts.com/t/1e6ec96c95301fa73aa1d026f161a269.woff2") format("woff2"),
-    url("http://db.onlinewebfonts.com/t/1e6ec96c95301fa73aa1d026f161a269.woff") format("woff"),
-    url("http://db.onlinewebfonts.com/t/1e6ec96c95301fa73aa1d026f161a269.ttf") format("truetype"),
-    url("http://db.onlinewebfonts.com/t/1e6ec96c95301fa73aa1d026f161a269.svg#MarzoW00-Regular") format("svg");
-}
+
 
 
 *,
@@ -38,7 +30,7 @@ img {
     text-transform: uppercase;
     margin-top: 8px;
     letter-spacing: 5px;
-    font-family: MarzoW00-Regular;
+    font-family: Comfortaa;
   }
   ul{
     display: inline-block;
@@ -77,7 +69,7 @@ img {
       font-weight: bold;
       text-transform: uppercase;
       letter-spacing: 2px;
-      font-family: MarzoW00-Regular;
+      font-family:Comfortaa;
       color: white;
     }
     h2{
@@ -95,7 +87,7 @@ img {
 .menu{
   height: 100vh;
   h1{
-    font-family:  MarzoW00-Regular;
+    font-family:  Comfortaa;
     text-align: center;
     font-size: 60px;
     letter-spacing: 8px;
@@ -118,7 +110,7 @@ img {
   .menu-options{
     margin-bottom: 50px;
     h3{
-      font-family:  MarzoW00-Regular;
+      font-family:  Comfortaa;
       font-size: 35px;
       margin-top: 15px;
       transition: 0.3s;
@@ -139,7 +131,7 @@ img {
 .contact{
   height: 93vh;
   .about-maddie{
-    height: 93vh;
+    height: 94vh;
     background: url('../images/maddie.jpg') center 0px;
     background-size: cover;
     padding: 0 50px 0 30px;
@@ -160,7 +152,7 @@ img {
     h2{
       position: relative;
       color: white;
-      font-family:  MarzoW00-Regular;
+      font-family:  Comfortaa;
       font-weight: bold;
       font-size: 55px;
       letter-spacing: 2px;
@@ -173,7 +165,7 @@ img {
     }
   }
   .contact-maddie{
-    height: 93vh;
+    height: 94vh;
     background: url('../images/contact-maddie.jpg') center -115px;
     background-size: cover;
     padding: 0 72px 0 30px;
@@ -190,7 +182,7 @@ img {
       h2{
         position: relative;
         color: white;
-        font-family:  MarzoW00-Regular;
+        font-family:  Comfortaa;
         font-weight: bold;
         font-size: 55px;
         letter-spacing: 2px;
@@ -318,33 +310,79 @@ img {
    }
 
 
-
+.hamburger-menu{
+  display: none;
+}
 
 .row{
   margin-bottom: 0;
 }
 
+a{
+  text-decoration: none;
+}
 
 
 
+@media (max-width: 992px) {
+  .menu{
+    height: 100%;
+  }
+}
+
+@media (max-width: 719px) {
+  .hamburger-menu{
+    display: inline-block;
+    float: right;
+    padding-right: 75px;
+    padding-top: 6px;
+    cursor: pointer;
+    i{
+      color: white;
+      transition: 0.5s;
+    }
+    &:hover{
+      i{
+        color: rgba(253, 131, 132, 0.8);
+      }
+    }
+  }
+  .nav-bar{
+    ul{
+      display: none;
+    }
+    .drop-menu{
+      display: block;
+      margin: -2px 0 0 0;
+      background-color: white;
+      width: 100%;
+      text-align: right;
+      transition: 0.5s;
+      li{
+        display: block;
+        border-bottom: 1px solid black;
+        padding: 10px 75px 10px 0;
+        margin: 0;
+        &:hover{
+          a{
+            color: rgba(253, 131, 132, 0.8);
+          }
+        }
+        a{
+          color: black;
+        }
+      }
+    }
+  }
+
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-a{text-decoration: none;}
+@media (max-width: 555px) {
+  .contact .contact-maddie .contact-section ul{
+    float: none;
+  }
+  .contact .contact-maddie form{
+    padding-left: 0;
+  }
+}

@@ -48,3 +48,10 @@ $('#message').on('focusout', function(){
     console.log($('#massage').val());
   }
 });
+
+
+
+
+$('.hamburger-menu').on('click', function(){
+  $('#dropdown').toggleClass('drop-menu');
+});

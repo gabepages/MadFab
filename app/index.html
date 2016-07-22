@@ -6,22 +6,27 @@
     <title>MadFab</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa:400,700,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
     <div class="container-fluid">
       <div class="nav-bar row">
         <h1 class='col-xs-offset-1 col-xs-4'>MadFab</h1>
-        <ul>
+        <div class="hamburger-menu">
+          <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
+        </div>
+        <ul id='dropdown'>
           <li><a href="#home">Home</a></li>
           <li><a href="#menu">Menu</a></li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
+
       </div>
       <div class="row main-landing">
         <a name='home'></a>
-        <div class="header col-xs-8 col-xs-offset-1">
+        <div class="header col-xs-8 col-sm-offset-1 col-xs-offset-0">
           <h1>Madfab</h1>
           <h2>Macarons and desserts</h2>
         </div>
@@ -46,7 +51,7 @@
       </div>
       <div class="photo-section row"></div>
       <div class="contact row">
-        <a name='contact'></a>
+
         <div class="about-maddie col-xs-12 col-md-6">
           <div class="about-copy">
             <h2>About MadFab</h2>
@@ -54,6 +59,7 @@
           </div>
         </div>
         <div class="contact-maddie col-xs-12 col-md-6">
+          <a name='contact'></a>
           <div class="contact-section">
             <h2>Contact MadFab</h2>
             <ul>
@@ -62,7 +68,7 @@
               <li><a id='instagram' href="https://www.instagram.com/mad.fab/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
             </ul>
           </div>
-          <form >
+          <form class='col-xs-12' >
             <div class="input-field">
               <input id="name" type="text" class="validate">
               <label for="name" id='name-label' data-error="Please enter your name">Name</label>
