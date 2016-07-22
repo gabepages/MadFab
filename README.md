@@ -10,17 +10,17 @@
 git clone https://github.com/gabepages/MadFab.git
 ```
 
-'''sh
+```sh
 cd MadFab
-'''
+```
 
-'''sh
+```sh
 npm install
-'''
+```
 
-'''sh
+```sh
 npm run server
-'''
+```
 
 
 ## Link
